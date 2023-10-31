@@ -1,0 +1,188 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat';
+/* font-size: 16px; */
+font-weight: 500;
+/* line-height: 20px; */
+/* letter-spacing: 0em; */
+
+
+
+}
+
+.navbar-section{
+    display: flex;
+    list-style: none;
+    background-color:  #002744;
+    color: white;
+    font-size: 18px;
+    padding: 25px;
+    justify-content: flex-end;
+
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+#slider{
+    overflow: hidden;
+}
+
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 10s slider infinite;
+}
+
+#slider figure img{
+    float: left;
+    width: 20%;
+    max-height: 100vh;
+}
+@keyframes slider {
+    0%{
+        left:0;
+    }
+    20%{
+        left:0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200% ;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: 0;
+    }
+
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    padding: 100px;
+}
+
+.about-section{
+    width: 30%;
+}
+
+.about-section h1{
+    font-size: 3em;
+}
+.about-section h2{
+    font-size: 2em;
+}
+
+
+.button{
+    background-color:#002744 ;
+    border: 0;
+    color: #FFCE78;
+    padding: 10px 30px;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 30px;
+
+}
+
+.container-2{
+    padding: 0 100px;
+   
+}
+.container-2 h1{
+    text-align: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10% ;
+    row-gap: 5%;
+    padding: 20px 100px;
+    margin-bottom: 100px;
+}
+.grid-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+.grid-item h4{
+    margin-bottom: 0;
+}
+
+.grid-item p{
+    padding: 0 20px;
+}
+
+.categories-section{
+    background-color: #002744;
+    padding: 25px;
+    margin-top: 100px;
+
+}
+
+h1{
+    font-size: 3em;
+}
+
+.categories-section h2{
+    padding: 0 25%;
+    text-align: center;
+    color: #FFCE78;
+    font-weight: 500;
+    font-size: 2em;
+}
+
+.grid-categories{
+    display: flex;
+    
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: center;
+    row-gap: 30px;
+    padding: 50px;
+
+}
+
+.grid-categories img{
+    margin: 35px;
+}
+
+.tile{
+    background-color: #002744;
+    width: 200px;
+    height: 200px;
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+.tile img{
+    margin-bottom: 50px;
+}
+
+footer{
+    height: 100px;
+    background-color: #002744;
+}
