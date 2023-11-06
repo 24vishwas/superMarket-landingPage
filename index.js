@@ -97,3 +97,33 @@ function showSlides() {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+
+// var heading = document.getElementById('heading')
+// console.log(heading.innerHTML)
+
+// const mediaQuery = window.matchMedia("(max-width: 1024px)");
+
+// function handleMediaChange(event) {
+//   if (event.matches) {
+//     const h1Element = document.createElement("h1");
+//     h1Element.textContent = heading.innerHTML;
+//     h1Element.classList.add("heading-class");
+
+
+
+
+//     const parentElement = document.getElementById("container");
+//     const nextSibling = document.getElementById("img-id");
+
+//     parentElement.insertBefore(h1Element, nextSibling);
+
+//     // document.getElementById("container").appendChild(h1Element);
+//     // Media query matches (screen size is less than or equal to 768 pixels)
+//     console.log("Media query matches.");
+//   } else {
+//     // Media query does not match (screen size is greater than 768 pixels)
+//     console.log("Media query does not match.");
+//   }
+// }
+
+// mediaQuery.addEventListener('change', handleMediaChange);

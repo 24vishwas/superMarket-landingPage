@@ -1,207 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>superMarket</title>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./resource/grid-5.png" type="image/x-icon">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Samagra SuperStore</title>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="icon" href="./resource/grid-5.png" type="image/x-icon">
+    </head>
 
-<body>
-    <navbar class="navbar-section">
-        <nav class="nav-container" id="topnav">
-            <li class="menu-icon">
-                <img src="menu.png" width="40px"  onclick="toggleFunction()" alt="menu-icon">
-            </li>
-            <li class="menu-close-icon">
-                <img src="menu-close-icon.png" max-width="10px"  onclick="toggleFunction()" alt="menu-icon">
-            </li>
-            <li>Home</li>
-            <li>About</li>
-            <li>Categories</li>
-            <li>Location</li>
-            <li>Get in Touch</li>
-        </nav>
-    </navbar>
-    <!-- <div id="slider">
-        <figure>
-            <img src="./resource/rectangle-1.png" alt="1st image">
-            <img src="./resource/rectangle-2.png" alt="2st image">
-            <img src="./resource/rectangle-3.png" alt="3st image">
-            <img src="./resource/rectangle-1.png" alt="1st image">
-        </figure>
+    <body>
+        <navbar class="navbar-section">
 
-    </div> -->
-    <!-- <div class="slideshow-container">
-        <button class="prev" onclick="prev()">Prev</button>
-        <button class="next" onclick="next()">Next</button>
-
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="./resource/rectangle-1.png" style="width:100%">
-          <div class="text">Caption Text</div>
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="./resource/rectangle-2.png" style="width:100%">
-          <div class="text">Caption Two</div>
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="./resource/rectangle-3.png" style="width:100%">
-          <div class="text">Caption Three</div>
-        </div>
-        
-        </div>
-        <br>
-        
-        <div style="text-align:center">
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-        </div> -->
-
+            <div class="logo">
+                <a href=""><h2>LOGO</h2></a>
+            </div>
+            <nav class="nav-container" id="topnav">
+                <li class="menu-icon">
+                    <img src="menu.png" width="40px" onclick="toggleFunction()" alt="menu-icon">
+                </li>
+                <li class="menu-close-icon">
+                    <img src="menu-close-icon.png" max-width="10px" onclick="toggleFunction()" alt="menu-icon">
+                </li>
+                <li>Home</li>
+                <li>About</li>
+                <li>Categories</li>
+                <li>Locations</li>
+                <li>Get in Touch</li>
+            </nav>
+        </navbar>
+       
         <div class="slideshow-container">
             <a class="prev" onclick="prevSlide()">&#10094;</a>
             <a class="next" onclick="showSlides()">&#10095;</a>
             <div class="mySlides fade">
-                <img src="./resource/rectangle-1.png" >
-    
+                <img src="./resource/rectangle-1.png">
+
             </div>
             <div class="mySlides fade">
-    
-                <img src="./resource/rectangle-2.png" >
-    
+
+                <img src="./resource/rectangle-2.png">
+
             </div>
-            <div class="mySlides fade">
-    <!-- style="width: 100vw;height: 100vh" -->
-                <img src="./resource/rectangle-3.png" >
-    
+            <div
+                class="mySlides fade">
+                <!-- style="width: 100vw;height: 100vh" -->
+                <img src="./resource/rectangle-3.png">
+
             </div>
-           <!-- margin:-5vh; -->
-            <div style=
-            "text-align:center; 
-            
-            ">
-    
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-    
-            </div>
+            <!-- margin:-5vh; -->
         </div>
-        
+        <div style="text-align:center; ">
+
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+
+        </div>
 
 
-    <div class="container">
-        <div class="image-section">
-            <img src="./resource/section-image.png" alt="about-img" class="">
+        <div class="container" id="container">
+
+            <div class="image-section" id="img-id">
+                <img src="./resource/section-image.png" alt="about-img" class="">
+            </div>
+            <div class="about-section">
+                <h1 id="heading">Lorem Ipsum</h1>
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt mauris eget odio feugiat maximus.
+                                    Mauris sagittis interdum euismod. Nam pulvinar ipsum quis lorem iaculis, in elementum mauris pulvinar.
+                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec interdum,
+                                    odio eget tempor sodales, enim ante feugiat justo, quis lacinia turpis nisl quis tellus. Nam feugiat
+                                    massa nec velit tempor, non placerat quam bibendum. Phasellus sed egestas quam, in eleifend mi. Maecenas
+                                    bibendum sem lacus, at suscipit arcu faucibus sed. Phasellus vestibulum blandit malesuada. Quisque ut
+                                    dapibus nisl, cursus tempus dui. Curabitur pulvinar ornare massa, ac rhoncus dui posuere quis.`</p>
+                <div class="button-container">
+                    <a href="">
+                        <button class="button">Superstore</button>
+                    </a>
+                    <a href="">
+                        <button class="button button2">Explore</button>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="about-section">
+        <div class="container-2">
             <h1>Lorem Ipsum</h1>
-            <h2>Lorem Ipsum</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt mauris eget odio feugiat maximus.
-                Mauris sagittis interdum euismod. Nam pulvinar ipsum quis lorem iaculis, in elementum mauris pulvinar.
-                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec interdum,
-                odio eget tempor sodales, enim ante feugiat justo, quis lacinia turpis nisl quis tellus. Nam feugiat
-                massa nec velit tempor, non placerat quam bibendum. Phasellus sed egestas quam, in eleifend mi. Maecenas
-                bibendum sem lacus, at suscipit arcu faucibus sed. Phasellus vestibulum blandit malesuada. Quisque ut
-                dapibus nisl, cursus tempus dui. Curabitur pulvinar ornare massa, ac rhoncus dui posuere quis.`</p>
-        <div class="button-container">                
-            <button class="button">Superstore</button>
-            <button class="button button2" >Explore</button>
-        </div>
-        </div>
-    </div>
-    <div class="container-2">
-        <h1>Lorem Ipsum</h1>
-        <div class="grid">
-            <div class="grid-item">
-                <img src="./resource/grid-1.png" alt="">
-                <h4>Locally Sourced</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu interdum massa. Donec nisl tortor,
-                    eleifend in posuere ac, vestibulum id tortor</p>
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="./resource/grid-1.png" alt="">
+                    <h4>Locally Sourced</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu interdum massa. Donec nisl tortor,
+                                            eleifend in posuere ac, vestibulum id tortor</p>
+                </div>
+
+                <div class="grid-item">
+                    <img src="./resource/grid-2.png" alt="">
+                    <h4>Verified Products</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu interdum massa. Donec nisl tortor,
+                                            eleifend in posuere ac, vestibulum id tortor</p>
+                </div>
+
+                <div class="grid-item">
+                    <img src="./resource/grid-3.png" alt="">
+                    <h4>Regional handpicked products</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu interdum massa. Donec nisl tortor,
+                                            eleifend in posuere ac, vestibulum id tortor</p>
+                </div>
+
+                <div class="grid-item">
+                    <img src="./resource/grid-4.png" alt="">
+                    <h4>Traditional produce of Bharath</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu interdum massa. Donec nisl tortor,
+                                            eleifend in posuere ac, vestibulum id tortor</p>
+                </div>
+
+                <div class="grid-item">
+                    <img src="./resource/grid-5.png" alt="">
+                    <h4>Premium products sourced globally</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu interdum massa. Donec nisl tortor,
+                                            eleifend in posuere ac, vestibulum id tortor</p>
+                </div>
+
+                <div class="grid-item">
+                    <img src="./resource/grid-6.png" alt="">
+                    <h4>Farm to fork
+                    </h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu interdum massa. Donec nisl tortor,
+                                            eleifend in posuere ac, vestibulum id tortor</p>
+                </div>
+
             </div>
-
-            <div class="grid-item">
-                <img src="./resource/grid-2.png" alt="">
-                <h4>Verified Products</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu interdum massa. Donec nisl tortor,
-                    eleifend in posuere ac, vestibulum id tortor</p>
-            </div>
-
-            <div class="grid-item">
-                <img src="./resource/grid-3.png" alt="">
-                <h4>Regional handpicked products</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu interdum massa. Donec nisl tortor,
-                    eleifend in posuere ac, vestibulum id tortor</p>
-            </div>
-
-            <div class="grid-item">
-                <img src="./resource/grid-4.png" alt="">
-                <h4>Traditional produce of Bharath</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu interdum massa. Donec nisl tortor,
-                    eleifend in posuere ac, vestibulum id tortor</p>
-            </div>
-
-            <div class="grid-item">
-                <img src="./resource/grid-5.png" alt="">
-                <h4>Premium products sourced globally</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu interdum massa. Donec nisl tortor,
-                    eleifend in posuere ac, vestibulum id tortor</p>
-            </div>
-
-            <div class="grid-item">
-                <img src="./resource/grid-6.png" alt="">
-                <h4>Farm to fork </h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu interdum massa. Donec nisl tortor,
-                    eleifend in posuere ac, vestibulum id tortor</p>
-            </div>
-
         </div>
-    </div>
 
-    <h1 style="text-align: center;">Categories</h1>
-    <div class="categories-section">
-        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-        <div class="grid-categories">
-            <img src="./resource/categories-1.png" alt="categories-images">
-            <img src="./resource/categories-2.png" alt="categories-images">
-            <img src="./resource/categories-3.png" alt="categories-images">
-            <img src="./resource/categories-4.png" alt="categories-images">
-            <img src="./resource/categories-5.png" alt="categories-images">
-            <img src="./resource/categories-6.png" alt="categories-images">
-            <img src="./resource/categories-7.png" alt="categories-images">
-            <img src="./resource/categories-8.png" alt="categories-images">
+        <h1 style="text-align: center;">Categories</h1>
+        <div class="categories-section">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+            <div class="grid-categories">
+                <a href="categories.html">
+                    <img src="./resource/categories-1.png" alt="categories-images">
+                    Categories
+                </a>
+                <a href="categories.html">
+                    <img src="./resource/categories-2.png" alt="categories-images">
+                    Categories
+                </a>
+                <a href="categories.html">
+                    <img src="./resource/categories-3.png" alt="categories-images">
+                    Categories
+                </a>
+                <a href="categories.html">
+                    <img src="./resource/categories-4.png" alt="categories-images">
+                    Categories
+                </a>
+                <a href="categories.html">
+                    <img src="./resource/categories-5.png" alt="categories-images">
+                    Categories
+                </a>
+                <a href="categories.html">
+                    <img src="./resource/categories-6.png" alt="categories-images">
+                    Categories
+                </a>
+                <a href="categories.html">
+                    <img src="./resource/categories-7.png" alt="categories-images">
+                    Categories
+                </a>
+                <a href="categories.html"><img src="./resource/categories-8.png" alt="categories-images">
+                    Categories
+                </a>
 
+            </div>
         </div>
-    </div>
 
-    <div class="container footer-container" style="margin-top: 0;">
-        <div class="tile">
-            <img src="./resource/contact-image.png" alt="contact-image">
-            <p>+91 8792926999</p>
+        <div class="footer-container" >
+            <div class="tile">
+                <img src="./resource/contact-image.png" alt="contact-image">
+                <p>+91 8792926999</p>
+            </div>
+            <div class="tile">
+                <img src="./resource/location-image.png" alt="location-image">
+                <p>Lorem ipsum</p>
+            </div>
+            <div class="tile">
+                <img src="./resource/mail-image.png" alt="mail-image">
+                <p>email.com</p>
+            </div>
         </div>
-        <div class="tile">
-            <img src="./resource/location-image.png" alt="location-image">
-            <p>Lorem ipsum</p>
-        </div>
-        <div class="tile">
-            <img src="./resource/mail-image.png" alt="mail-image">
-            <p>email.com</p>
-        </div>
-    </div>
-    <footer>
+        <footer></footer>
 
-    </footer>
-
-    <script src="index.js"></script>
-</body>
+        <script src="index.js"></script>
+    </body>
 
 </html>
