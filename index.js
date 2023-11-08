@@ -1,45 +1,33 @@
+// mobile navbar
 function toggleFunction() {
-  var x = document.getElementById("topnav");
-  if (x.className === "nav-container") {
-    x.className += " responsive";
-  } else {
-    x.className = "nav-container";
-  }
+    var x = document.getElementById("topnav");
+    if (x.className === "nav-container") {
+        x.className += " responsive";
+    } else {
+        x.className = "nav-container";
+    }
 }
 
-// let slideIndex = 0;
+function checkOrientation() {
+    var x = document.getElementById("topnav");
+    if (window.matchMedia("(orientation: landscape)").matches) {
+        // Change the class name to "landscape" when in landscape orientation
 
-// function prev(){
-//     slideIndex-- 
-//     // showSlides()
-// }
-
-// function next(){
-//     slideIndex++
-//     // showSlides()
-// }
-
-// showSlides();
-
-// function showSlides() {
-//   let i;
-//   let slides = document.getElementsByClassName("mySlides");
-//   let dots = document.getElementsByClassName("dot");
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";  
-//   }
-//   slideIndex++;
-//   if (slideIndex > slides.length) {slideIndex = 1}    
-//   for (i = 0; i < dots.length; i++) {
-//     dots[i].className = dots[i].className.replace(" active", "");
-//   }
-//   slides[slideIndex-1].style.display = "block";  
-//   dots[slideIndex-1].className += " active";
-//   setTimeout(showSlides, 3000); // Change image every 2 seconds
+        if (x.className === "nav-container responsive") {
+            x.className = "nav-container"
+        }
 
 
-// }
+    } else {}
+}
 
+checkOrientation();
+
+// Listen for the window resize event to detect orientation changes
+window.addEventListener('resize', checkOrientation);
+
+
+// slider
 var timeOut = 2000;
 var slideIndex = 0;
 var autoOn = true;
@@ -62,7 +50,7 @@ function prevSlide() {
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
 
-    for (i = 0; i < slides.length; i++) {
+    for (i = 0; i < slides.length; i ++) {
         slides[i].style.display = "none";
         dots[i].className = dots[i].className.replace(" active", "");
     }
@@ -85,7 +73,7 @@ function showSlides() {
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
 
-    for (i = 0; i < slides.length; i++) {
+    for (i = 0; i < slides.length; i ++) {
         slides[i].style.display = "none";
         dots[i].className = dots[i].className.replace(" active", "");
     }
@@ -97,33 +85,3 @@ function showSlides() {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
-
-// var heading = document.getElementById('heading')
-// console.log(heading.innerHTML)
-
-// const mediaQuery = window.matchMedia("(max-width: 1024px)");
-
-// function handleMediaChange(event) {
-//   if (event.matches) {
-//     const h1Element = document.createElement("h1");
-//     h1Element.textContent = heading.innerHTML;
-//     h1Element.classList.add("heading-class");
-
-
-
-
-//     const parentElement = document.getElementById("container");
-//     const nextSibling = document.getElementById("img-id");
-
-//     parentElement.insertBefore(h1Element, nextSibling);
-
-//     // document.getElementById("container").appendChild(h1Element);
-//     // Media query matches (screen size is less than or equal to 768 pixels)
-//     console.log("Media query matches.");
-//   } else {
-//     // Media query does not match (screen size is greater than 768 pixels)
-//     console.log("Media query does not match.");
-//   }
-// }
-
-// mediaQuery.addEventListener('change', handleMediaChange);
