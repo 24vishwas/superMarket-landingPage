@@ -32,6 +32,12 @@ body {
     text-decoration: none;
     color: white;
 }
+.logo img{
+    height: 50px;
+    width: 300px;
+    object-fit: cover;
+    object-position: center;
+}
 
 
 .menu-icon {
