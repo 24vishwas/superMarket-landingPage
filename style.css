@@ -28,15 +28,21 @@ body {
     margin: 0;
     
 }
-.logo a{
-    text-decoration: none;
-    color: white;
+.logo {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    overflow: clip;
 }
 .logo img{
-    height: 50px;
-    width: 300px;
-    object-fit: cover;
-    object-position: center;
+    height: 300px;
+    width:300px;
+    /* width: 100%; */
+    /* height: 100%; */
+    object-fit: none;
+    object-position: 25px;
+    transform: scale(1.6);
 }
 
 
