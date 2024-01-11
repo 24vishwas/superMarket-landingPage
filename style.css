@@ -204,7 +204,7 @@ a{
     overflow: hidden;
     width: 100%;
     height: auto;
-    max-height: 750px;
+    max-height: 600px;
     margin: auto;
 }
 .carousel-wrapper{
@@ -305,8 +305,8 @@ a{
     
 }
 .image-section{
-    width: 50%;
-    max-height: 650px;
+    width: 45%;
+    max-height: 550px;
 }
 .container .image-section img {
     width: 100%;
@@ -584,6 +584,8 @@ footer>p{
     
     display: flex;
     justify-content: space-between;
+    max-width: 1320px;
+    margin-inline: auto;
     
 }
 
