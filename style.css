@@ -194,8 +194,8 @@ a{
 
 .mySlides img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
 }
 
 
@@ -204,7 +204,7 @@ a{
     overflow: hidden;
     width: 100%;
     height: auto;
-    max-height: 600px;
+    /* max-height: 600px; */
     margin: auto;
 }
 .carousel-wrapper{
@@ -479,8 +479,13 @@ h1 {
 .grid-categories img {
 
     width: 100%;
+    height: 100%;
+    max-height:200px;
+    object-fit: cover;
+    object-position: center;
     max-width: 300px;
     margin-bottom: 10px;
+    /* border-radius: ; */
 }
 
 
@@ -526,8 +531,8 @@ justify-content: space-evenly;
 
 
     .mySlides img {
-        width: auto;
-        height: 400px;
+        /* width: auto; */
+        /* height: 400px; */
     }
 
    
@@ -541,7 +546,7 @@ justify-content: space-evenly;
     }
 
     .grid-categories img {
-        max-width: 100%;
+        max-width: 90%;
     }
 
     .grid-categories a {
@@ -574,6 +579,7 @@ justify-content: space-evenly;
     color: white;
     padding: 50px 5vw;
     background: #002744;
+    overflow: hidden;
 }
 footer>p{
     text-align: center;
