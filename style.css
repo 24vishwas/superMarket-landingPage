@@ -366,8 +366,10 @@ a{
         display: grid;
         grid-template-columns: auto;
         justify-items: center;
-
-        
+    }
+    .image-section{
+        width: 90%;
+        max-height: 550px;
     }
 
     .about-section {
