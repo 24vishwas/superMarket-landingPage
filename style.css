@@ -680,6 +680,12 @@ footer>p{
         width: 100%;
         text-align: center;
     }
+    .nav-footer .logo{
+        justify-content: center;
+    }
+    .nav-footer .logo img{
+        object-position: center;
+    }
     .feedback{
         margin-top: 10vh;
         width: 100%;
